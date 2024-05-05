@@ -1,5 +1,5 @@
 // diğer dosyalardan alınan veriler
-import {renderMenuItems}from './scripts/ui.js';
+import {renderMenuItems, renderButtons}from './scripts/ui.js';
 
 const buttonsArea = document.getElementById('buttons');
 
@@ -19,6 +19,7 @@ async function fetchMenu (){
 //* olay izleme
 window.addEventListener('DOMContentLoaded', async () => {
  //verileri çeken fonksiyonu çalıştır.   
+ renderButtons("Hepsi");
 fetchMenu()
 //fonksiyon başarılı olursa kartları basan fonksiyonu çalıştır.
 .then(() => renderMenuItems(data.menu));
@@ -29,18 +30,21 @@ buttonsArea.addEventListener("click", (event) =>{
     //
     if(event.target.id == "buttons")return;
 
+    //active olan butonu belirlemek için butonları ekrana tekrar bas
+    renderButtons(event.target.innerText);
+
     const selectedCategory = event.target.dataset.id;
 
     if(selectedCategory === "all"){
         renderMenuItems(data.menu)
     }else{
-        const filtred = data.menu.filter((item) => item.category === selectedCategory);
+        const filtred = data.menu.filter(
+            (item) => item.category === selectedCategory);
 
         renderMenuItems(filtred);
     }
     
-
-
 });
+
 
 
