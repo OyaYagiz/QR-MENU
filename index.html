@@ -13,16 +13,16 @@
 <h1 class="heading">Menümüz</h1>
 
 <!---butonlar---->
-<div class="d-flex justify-content-center gap-3 my-4">
-    <button class="btn btn-outline-dark">Hepsi</button>
-    <button class="btn btn-outline-dark">Kahvaltı</button>
-    <button class="btn btn-outline-dark">Öğle Yemeği</button>
-    <button class="btn btn-outline-dark">İçecekler</button>
+<div id="buttons" class="d-flex justify-content-center gap-3 my-4">
+    <button data-id="all" class="btn btn-outline-dark">Hepsi</button>
+    <button data-id="breakfast" class="btn btn-outline-dark">Kahvaltı</button>
+    <button data-id="lunch" class="btn btn-outline-dark">Öğle Yemeği</button>
+    <button data-id="shakes" class="btn btn-outline-dark">İçecekler</button>
 </div>
 
 <!---menu listesi--->
 <div id="menu-list">
-<a id="card" 
+<!-- <a id="card" 
 href="#" 
 class="d-flex flex-column flex-md-row text-decoration-none text-dark gap-3">
     <img class="rounded shadow img-fluid" src="images/item-1.jpeg"/>
@@ -35,7 +35,7 @@ class="d-flex flex-column flex-md-row text-decoration-none text-dark gap-3">
             sahip süzme pankekler...
         </p>
     </div>
-</a>
+</a> -->
 
 </div>
     <script src="main.js" type="module"></script>
