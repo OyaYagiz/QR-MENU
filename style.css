@@ -2,6 +2,10 @@
 
 body {
     font: 'poppins';
+    background-color: #8ec5fcab;
+background-image: linear-gradient(34deg, #8ec5fccb 0%, #d0a7f7b7 100%);
+
+
 }
 
 .heading {
