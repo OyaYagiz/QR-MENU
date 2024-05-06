@@ -13,7 +13,7 @@ const cardsHTML = data
     (item) => ` 
    <a
       id="card" 
-      href="#" 
+      href="/detail.html?id=${item.id}" 
       class="d-flex flex-column flex-md-row text-decoration-none text-dark gap-3">
       <img
       class="rounded shadow img-fluid"
