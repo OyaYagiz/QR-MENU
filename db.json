@@ -30,7 +30,7 @@
         "category": "breakfast",
         "price": 20.99,
         "img": "./images/item-4.jpeg",
-        "desc": "Köy breakfastlarının vazgeçilmez lezzeti artık burada! Tamamen doğal malzemelerle hazırlanan Köy Lezzeti breakfastsı, sizleri enfes bir lezzet şölenine davet ediyor."
+        "desc": "Köy breakfastlarının vazgeçilmez lezzeti artık burada! Tamamen doğal malzemelerle hazırlanan Köy Lezzeti breakfastsı davet ediyor."
       },
       {
         "id": 5,
@@ -38,7 +38,7 @@
         "category": "lunch",
         "price": 22.99,
         "img": "./images/item-5.jpeg",
-        "desc": "Köy breakfastlarının vazgeçilmez lezzeti artık burada! Tamamen doğal malzemelerle hazırlanan Köy Lezzeti breakfastsı, sizleri enfes bir lezzet şölenine davet ediyor."
+        "desc": "Köy breakfastlarının vazgeçilmez lezzeti artık burada! Tamamen doğal malzemelerle hazırlanan Köy Lezzeti breakfastsı davet ediyor."
       },
   
       {

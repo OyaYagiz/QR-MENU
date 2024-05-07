@@ -9,10 +9,18 @@ document.addEventListener('DOMContentLoaded', async() => {
     const data = await res.json();
     console.log(paramId, data.menu);
     //veriler arasında url'deki id'ye denk gelen veriyi al
-   const product = data.menu.find((item) => item.id == paramId);
-
-   renderPage(product);
-    //sayfa içeriği elimizdeki verilere göre değiştir
+    if (paramId) {
+        const product = data.menu.find((item) => item.id == paramId);
+        if (product) {
+            renderPage(product);
+        } else {
+            // URL'de geçersiz bir id parametresi var, belki bir hata mesajı gösterilebilir
+            console.error("Geçersiz ürün idsi:", paramId);
+        }
+    } else {
+        // URL'de id parametresi yok, belki varsayılan bir sayfa gösterilebilir
+        console.error("id parametresi bulunamadı");
+    }
 });
  
 const outlet = document.getElementById("outlet");

@@ -19,10 +19,11 @@ async function fetchMenu (){
 //* olay izleme
 window.addEventListener('DOMContentLoaded', async () => {
  //verileri çeken fonksiyonu çalıştır.   
- renderButtons("Hepsi");
-fetchMenu()
+  await fetchMenu();
 //fonksiyon başarılı olursa kartları basan fonksiyonu çalıştır.
-.then(() => renderMenuItems(data.menu));
+  renderMenuItems(data.menu);
+// butonları render et
+  renderButtons("Hepsi");
 });
 
 //butonara tıklanma olayını izle

@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    font: 'poppins';
-    background-color: rgba(245, 232, 215, 0.568);
-    
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5E8D7; /* veya rgba(245, 232, 215, 1); */
 }
 
 .heading {
-    font-family: 'cherry swash';
+    font-family: 'Cherry Swash', cursive;
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
 }
 
-#menu-list{
-display: grid;
-padding: 40px 160px 0;
-justify-content: center;
-grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-gap: 70px;
+#menu-list {
+    display: grid;
+    padding: 40px 160px 0;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 70px;
 }
 
-#card img{
-    width: 210px;
-    height: 230px;
+#menu-list #card {
+    max-width: 400px;
+}
+
+#menu-list #card img {
+    width: 180px;
+    height: 160px;
     object-fit: cover;
+}
+.small {
+    font-size: 0.8em; /* veya başka bir boyut */
 }
 
 

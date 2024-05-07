@@ -24,7 +24,7 @@ const cardsHTML = data
             <h5>${item.title}</h5>
             <p class="text-primary fw-bold">${(item.price *32).toFixed(2)}₺</p>
         </div>
-        <p class="lead overflow:hidden">${item.desc}
+        <p class="lead fs-6">${item.desc}
         </p>
      </div>
  </a>
