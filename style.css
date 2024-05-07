@@ -2,10 +2,8 @@
 
 body {
     font: 'poppins';
-    background-color: #8ec5fcab;
-background-image: linear-gradient(34deg, #8ec5fccb 0%, #d0a7f7b7 100%);
-
-
+    background-color: rgba(245, 232, 215, 0.568);
+    
 }
 
 .heading {
@@ -24,8 +22,8 @@ gap: 70px;
 }
 
 #card img{
-    width: 160px;
-    height: 100px;
+    width: 210px;
+    height: 230px;
     object-fit: cover;
 }
 

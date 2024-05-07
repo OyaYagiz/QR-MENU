@@ -31,16 +31,16 @@ function renderPage(product){
     <!----İÇERİK KISMI------>
     <h1 class="text-center my-3">${product.title}</h1>
 
-    <img src="${product.img}" alt="oreo">
+    <img style="border-radius:20px" src="${product.img}" alt="oreo">
 
     <h3 class="mt-4">
         <span>Ürünün Kategorisi:</span>
-        <span class="text-success">${product.category}</span>
+        <span class="text-primary">${product.category}</span>
     </h3>
 
     <h3 class="mt-4">
         <span>Ürünün Fiyatı:</span>
-        <span class="text-success">${product.price *3}₺</span>
+        <span class="text-primary">${product.price *3}₺</span>
     </h3>
     <p class="lead">
         ${product.desc}
